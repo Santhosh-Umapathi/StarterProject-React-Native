@@ -39,6 +39,13 @@ const HomeScreen = ({navigation}) =>
           navigation.navigate("Box");
         }}
       />
+
+      <Button
+        title="Color Counter Screen"
+        onPress={() => {
+          navigation.navigate("ColorCounter");
+        }}
+      />
     </View>
   );
 };
