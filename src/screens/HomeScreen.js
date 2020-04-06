@@ -32,6 +32,13 @@ const HomeScreen = ({navigation}) =>
           navigation.navigate("Counter");
         }}
       />
+
+      <Button
+        title="Box Screen"
+        onPress={() => {
+          navigation.navigate("Box");
+        }}
+      />
     </View>
   );
 };
