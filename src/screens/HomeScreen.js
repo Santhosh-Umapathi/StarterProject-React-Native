@@ -46,6 +46,13 @@ const HomeScreen = ({navigation}) =>
           navigation.navigate("ColorCounter");
         }}
       />
+
+      <Button
+        title="Text Input Screen"
+        onPress={() => {
+          navigation.navigate("TextInput");
+        }}
+      />
     </View>
   );
 };
