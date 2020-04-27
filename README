@@ -1,2 +1,49 @@
 //MARK: Topics Covered
 
+
+//------------------------------------------------------------------
+//MARK: Components Screen
+
+- assigning constants to jsx blocks
+
+//------------------------------------------------------------------
+//MARK: List Screen
+
+- Flatlist
+- Data Array of Obejcts (key:value)
+
+//------------------------------------------------------------------
+//MARK: Image Screen
+
+- Resuable custom Component
+ - Creating Custom Child Component
+ - Declaring custom child component in parent component
+ - Passing props with values from parent component to Child custom component
+
+//------------------------------------------------------------------
+//MARK: Counter Screen
+
+- Reducer function
+- useReducer, useState Hooks
+- dispatch actions
+
+//------------------------------------------------------------------
+//MARK: Box Screen
+
+- State with Array of Strings
+- Flatlist created with add button
+
+//------------------------------------------------------------------
+//MARK: Color counter Screen
+
+- Reducer function
+- useReducer, useState Hooks
+- dispatch actions
+- Resuable Components, Passing props
+
+//------------------------------------------------------------------
+//MARK: Text Input Screen
+
+- Text Input with props
+- User input check for password
+

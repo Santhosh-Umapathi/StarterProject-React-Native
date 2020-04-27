@@ -1,18 +1,16 @@
 import React, {useState} from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
-import { FlatList } from 'react-native-gesture-handler';
+import { View, Text, StyleSheet, Button, FlatList } from "react-native";
 
 const BoxColorsScreen = ({navigation}) =>
 {
-
     const [colors, setColors] = useState([]);
-
 
     return (
         <View style={styles.containerView}>
             <Text style={styles.text}>BoxColorsScreen</Text>
 
-            <Button title='Add Color Box' onPress={() => {setColors([...colors, rgbValue()]);}}
+            <Button title='Add Color Box' onPress={() =>
+            { setColors([...colors, rgbValue()]) }}
             />
             <FlatList
                 data={colors}
@@ -44,7 +42,6 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
-        //justifyContent: 'center',
     },
     text: 
     {

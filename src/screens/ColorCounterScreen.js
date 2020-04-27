@@ -1,6 +1,5 @@
-
-//Using Reducer
-
+//MARK: Using Use Reducer Hooks
+//-------------------------------
 import React, { useReducer } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import ColorCounterComponent from '../components/ColorCounterComponent'
@@ -70,7 +69,6 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
-        //justifyContent: 'center',
     },
     text: 
     {
@@ -80,8 +78,8 @@ const styles = StyleSheet.create({
 
 export default ColorCounterScreen;
 
-//-----------------------------------------------------------------
-//  Using State Management
+//------------------------------------------------------------------
+//MARK: Using Use State Hooks
 
 // import React, { useState } from "react";
 // import { View, Text, StyleSheet } from "react-native";
@@ -152,7 +150,6 @@ export default ColorCounterScreen;
 //     flex: 1,
 //     backgroundColor: "#fff",
 //     alignItems: "center",
-//     //justifyContent: 'center',
 //   },
 //   text: {
 //     fontSize: 30,

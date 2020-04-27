@@ -4,7 +4,6 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 const ColorCounterComponent = ({color, onIncrease, onDecrease}) =>
 {
 
-
     return (
       <View style={styles.containerView}>
         <Text>{color}</Text>
@@ -17,10 +16,7 @@ const ColorCounterComponent = ({color, onIncrease, onDecrease}) =>
 const styles = StyleSheet.create({
     containerView:
     {
-        //flex: 1,
         backgroundColor: '#fff',
-        //alignItems: 'center',
-        //justifyContent: 'center',
     },
     text: 
     {

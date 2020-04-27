@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, Button  } from 'react-native';
+import { View, Text, TextInput, StyleSheet } from 'react-native';
 
 const TextInputScreen = ({navigation}) =>
 {
@@ -21,9 +21,7 @@ const TextInputScreen = ({navigation}) =>
           autoCapitalize="none"
           autoCorrect={false}
           value={name}
-          onChangeText={(name) => {
-            setName(name);
-          }}
+          onChangeText={name => setName(name)}
         />
         <Text>Entered Name is: {name}</Text>
 
@@ -39,9 +37,7 @@ const TextInputScreen = ({navigation}) =>
             autoCorrect={false}
             secureTextEntry={true}
             value={password}
-            onChangeText={(password) => {
-            setPassword(password);
-            }}
+            onChangeText={password => setPassword(password) }
             />
             {password.length < 5 ? <Text>Password must be more than 5 chars</Text> : null}
       </View>
@@ -53,8 +49,6 @@ const styles = StyleSheet.create({
     {
         flex: 1,
         backgroundColor: '#fff',
-        //alignItems: 'center',
-        //justifyContent: 'center',
     },
     text: 
     {

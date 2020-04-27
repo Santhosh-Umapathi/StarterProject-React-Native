@@ -1,17 +1,16 @@
-import React, {useState} from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, Button  } from 'react-native';
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
 import ImageComponent from '../components/ImageComponent';
 
 const ImageScreen = ({navigation}) =>
 {
 
-
     return (
       <View style={styles.containerView}>
         <ImageComponent
-          title="Forest"
-                imageLocation={require("../../assets/forest.jpg")}
-                score = '8'
+            title="Forest"
+            imageLocation={require("../../assets/forest.jpg")}
+            score = '8'
         />
 
         <ImageComponent

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Text, FlatList, StyleSheet, View } from 'react-native';
-
+import { Text, FlatList, StyleSheet } from 'react-native';
 
 const ListScreen = () => {
     
@@ -15,23 +14,18 @@ const ListScreen = () => {
       { name: "Will", age: 24 }
     ];
 
-
-
-
     return (
         <FlatList
             //horizontal
             //showsHorizontalScrollIndicator = {false}
             data={Friends}
             keyExtractor={key => key.name}
-            renderItem={({item}) => {
+            renderItem={({item}) => { //item || index available
                 return (
                     <Text style={styles.textStyle}>{item.name} - Age{item.age}</Text>
                 )
             }}
         />
-
-        
     );
 }
 

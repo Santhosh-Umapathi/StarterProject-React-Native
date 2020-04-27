@@ -1,7 +1,7 @@
-//Using Reducer
-
+//MARK: Using Use Reducer Hooks
+//-------------------------------
 import React, { useReducer } from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, Button  } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -33,15 +33,11 @@ const CounterScreen = ({navigation}) =>
             <Text style={styles.text}>CounterScreen</Text>
             <Button
                 title="Increase"
-                onPress={() => {
-                    dispatch({ type:'Increment' , payload: 1})
-                }}
+                onPress={() => dispatch({ type:'Increment' , payload: 1})}
             />
             <Button
                 title="Decrease"
-                onPress={() => {
-                    dispatch({ type: "Decrement", payload: - 1 });
-                }}
+                onPress={() => dispatch({ type: "Decrement", payload: - 1 })}
             />
             <Text>{counter}</Text>
         </View>
@@ -65,9 +61,9 @@ const styles = StyleSheet.create({
 
 export default CounterScreen;
 
-//--------------------------------------------------------
-// Using State Mangement
 
+//------------------------------------------------------------------
+//MARK: Using Use State Hooks
 
 // import React, { useState } from "react";
 // import {
@@ -87,15 +83,11 @@ export default CounterScreen;
 //       <Text style={styles.text}>CounterScreen</Text>
 //       <Button
 //         title="Increase"
-//         onPress={() => {
-//           setCounter(counter + 1);
-//         }}
+//         onPress={() => setCounter(counter + 1)}
 //       />
 //       <Button
 //         title="Decrease"
-//         onPress={() => {
-//           setCounter(counter - 1);
-//         }}
+//         onPress={() => setCounter(counter - 1) }
 //       />
 //       <Text>{counter}</Text>
 //     </View>
